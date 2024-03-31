@@ -1,6 +1,7 @@
 package com.login.taxCalculationApplication.controller;
 
 import com.login.taxCalculationApplication.model.LoginModel;
+import com.login.taxCalculationApplication.model.RegistrationModel;
 import com.login.taxCalculationApplication.service.LoginUserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,7 +36,7 @@ public class LoginUserController {
 
 
     @PostMapping(value = "/scalableTaxCalculation/user/register", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Object> registerUser(@Valid @RequestBody LoginModel userModel) {
+    public ResponseEntity<Object> registerUser(@Valid @RequestBody RegistrationModel userModel) {
         try {
             boolean registrationSuccess = loginUserService.registerUser(userModel);
 

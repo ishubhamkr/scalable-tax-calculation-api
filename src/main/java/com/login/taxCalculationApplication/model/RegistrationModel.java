@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
-public class LoginModel {
+public class RegistrationModel {
     @NotNull
     @Size(min=5)
     private String userName;
@@ -16,4 +16,15 @@ public class LoginModel {
     @Size(min=8)
     private String password;
 
+    @NotNull
+    @Size(min=4)
+    private String name;
+
+    @NotNull
+    @Size(min=5)
+    private String email;
+
+    @NotNull
+    @Size(min=10)
+    private String phoneNumber;
 }
