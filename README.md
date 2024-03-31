@@ -56,16 +56,18 @@ This project is licensed under the [MIT License](LICENSE).
 curl --location 'http://localhost:8080/scalableTaxCalculation/user/register' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "email": "shubham@gmail.com",
+    "email": "shubham149@gmail.com",
     "password": "password@123",
-    "fullName": "Shubham Kumar"
+    "name": "Shubham Kumar",
+    "userName":"shubham09",
+    "phoneNumber":"9999999999"
 }'
 
 # Login
 curl --location 'http://localhost:8080/scalableTaxCalculation/user/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "email": "shubham@gmail.com",
+    "userName": "shubham09",
     "password": "password@123"
 }'
 
