@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://mtis202009:Ir3Kmbwk5EMMMMt1@taxcalculation.2sitgws.mongodb.net/ScalableTaxCalculation
