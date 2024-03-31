@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class UserTaxData {
+    private String email;
     private double basicSalary;
     private double allowances;
     private double bonuses;

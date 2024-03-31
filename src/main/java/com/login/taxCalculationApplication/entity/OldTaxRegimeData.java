@@ -8,9 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class OldTaxRegimeData {
     @Id
-    private Long id;
+    private String id;
     private String email;
     private double basicSalary;
+    private double taxAmount;
     private double allowances;
     private double bonuses;
     private double rentalIncome;
