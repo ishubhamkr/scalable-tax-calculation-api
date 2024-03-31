@@ -5,6 +5,7 @@ import com.login.taxCalculationApplication.model.LoginModel;
 import com.login.taxCalculationApplication.repository.LoginUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
 
 @Service
 public class LoginUserServiceImpl implements LoginUserService {
@@ -20,14 +21,15 @@ public class LoginUserServiceImpl implements LoginUserService {
 
     @Override
     public boolean registerUser(LoginModel loginModel) {
-        try {
+        UserEntity users = loginUserRepo.findByEmailAndPassword(loginModel.getEmail(), loginModel.getPassword());
+        if(ObjectUtils.isEmpty(users)){
             UserEntity user = new UserEntity();
             user.setEmail(loginModel.getEmail());
             user.setPassword(loginModel.getPassword());
             user.setFullName(loginModel.getFullName());
             loginUserRepo.save(user);
             return true;
-        } catch (Exception e) {
+        } else {
             return false;
         }
     }
