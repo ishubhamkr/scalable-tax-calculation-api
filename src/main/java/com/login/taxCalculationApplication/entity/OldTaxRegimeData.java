@@ -1,4 +1,4 @@
-package com.login.usermanagement.entity;
+package com.login.taxCalculationApplication.entity;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

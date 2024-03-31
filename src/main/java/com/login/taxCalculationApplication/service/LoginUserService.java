@@ -1,6 +1,6 @@
-package com.login.usermanagement.service;
+package com.login.taxCalculationApplication.service;
 
-import com.login.usermanagement.model.LoginModel;
+import com.login.taxCalculationApplication.model.LoginModel;
 
 public interface LoginUserService {
     boolean login(LoginModel loginModel);

@@ -1,7 +1,7 @@
-package com.login.usermanagement.controller;
+package com.login.taxCalculationApplication.controller;
 
-import com.login.usermanagement.model.UserTaxData;
-import com.login.usermanagement.service.TaxCalculationService;
+import com.login.taxCalculationApplication.model.UserTaxData;
+import com.login.taxCalculationApplication.service.TaxCalculationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

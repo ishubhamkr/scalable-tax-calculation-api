@@ -1,6 +1,6 @@
-package com.login.usermanagement.service;
+package com.login.taxCalculationApplication.service;
 
-import com.login.usermanagement.model.UserTaxData;
+import com.login.taxCalculationApplication.model.UserTaxData;
 import org.springframework.stereotype.Service;
 
 @Service

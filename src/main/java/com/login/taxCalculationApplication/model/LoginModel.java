@@ -1,4 +1,4 @@
-package com.login.usermanagement.model;
+package com.login.taxCalculationApplication.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.validation.constraints.NotNull;

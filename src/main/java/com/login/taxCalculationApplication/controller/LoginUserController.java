@@ -1,7 +1,7 @@
-package com.login.usermanagement.controller;
+package com.login.taxCalculationApplication.controller;
 
-import com.login.usermanagement.model.LoginModel;
-import com.login.usermanagement.service.LoginUserService;
+import com.login.taxCalculationApplication.model.LoginModel;
+import com.login.taxCalculationApplication.service.LoginUserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

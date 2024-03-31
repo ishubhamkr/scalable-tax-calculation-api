@@ -1,8 +1,8 @@
-package com.login.usermanagement.service;
+package com.login.taxCalculationApplication.service;
 
-import com.login.usermanagement.entity.UserEntity;
-import com.login.usermanagement.model.LoginModel;
-import com.login.usermanagement.repository.LoginUserRepository;
+import com.login.taxCalculationApplication.entity.UserEntity;
+import com.login.taxCalculationApplication.model.LoginModel;
+import com.login.taxCalculationApplication.repository.LoginUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.login.usermanagement.repository;
+package com.login.taxCalculationApplication.repository;
 
-import com.login.usermanagement.entity.UserEntity;
+import com.login.taxCalculationApplication.entity.UserEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
