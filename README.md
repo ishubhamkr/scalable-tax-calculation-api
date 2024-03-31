@@ -37,9 +37,9 @@ The Scalable Tax Calculation API is a service that handles user data and tax cal
 
 ## API Endpoints
 
-- **POST /scalabletaxcalculation/user/register**: Register a new user.
-- **POST /scalabletaxcalculation/user/login**: Login an existing user.
-- **POST /scalabletaxcalculation/tax/calculate**: Calculate taxes based on user inputs.
+- **POST /scalableTaxCalculation/user/register**: Register a new user.
+- **POST /scalableTaxCalculation/user/login**: Login an existing user.
+- **POST /scalableTaxCalculation/tax/calculate**: Calculate taxes based on user inputs.
 
 ## Contributing
 
