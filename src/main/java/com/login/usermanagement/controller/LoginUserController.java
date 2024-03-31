@@ -17,7 +17,7 @@ public class LoginUserController {
     @Autowired
     private LoginUserService loginUserService;
 
-    @PostMapping(value = "/scalabletaxcalculation/user/login", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/scalableTaxCalculation/user/login", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> loginUser(@Valid @RequestBody LoginModel loginModel) {
         try {
             boolean loginSuccess = loginUserService.login(loginModel);
@@ -34,7 +34,7 @@ public class LoginUserController {
     }
 
 
-    @PostMapping(value = "/scalabletaxcalculation/user/register", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/scalableTaxCalculation/user/register", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> registerUser(@Valid @RequestBody LoginModel userModel) {
         try {
             boolean registrationSuccess = loginUserService.registerUser(userModel);
