@@ -48,3 +48,44 @@ Contributions are welcome! If you find any issues or want to contribute to the p
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## cURL Examples
+
+```bash
+# Register
+curl --location 'http://localhost:8080/scalableTaxCalculation/user/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "shubham@gmail.com",
+    "password": "password@123",
+    "fullName": "Shubham Kumar"
+}'
+
+# Login
+curl --location 'http://localhost:8080/scalableTaxCalculation/user/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "shubham@gmail.com",
+    "password": "password@123"
+}'
+
+# Calculate Tax
+curl --location 'http://localhost:8080/scalableTaxCalculation/tax/calculate' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "example@example.com",
+    "basicSalary": 250000,
+    "allowances": 10000,
+    "bonuses": 5000,
+    "rentalIncome": 15000,
+    "profitLoss": 20000,
+    "interestIncome": 5000,
+    "dividendIncome": 3000,
+    "winnings": 1000,
+    "investments": 20000,
+    "premiums": 5000,
+    "healthInsurancePremiums": 3000,
+    "educationLoanInterest": 2000,
+    "hraReceived": 10000,
+    "standardDeductionAmount": 10000
+}'
